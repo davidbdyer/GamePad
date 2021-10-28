@@ -1,0 +1,139 @@
+:root {
+	--banner-height: 18vh;
+}
+
+body {
+	margin: auto;
+	height: 100vw;
+	background-color: white;
+}
+
+#banner {
+	display: flex;
+	align-items: center;
+	height: var(--banner-height);
+	background: url(/assets/header-banner.png);
+	background-size: 100% 100%;
+	background-repeat: repeat-x;
+	background-position: center;
+}
+
+#banner > img {
+	height: 12vh;
+	margin-left: 2rem;
+}
+
+header {
+	height: 102vh;
+	background: url(/assets/wood.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hero-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10vw;
+	margin-inline: auto;
+	width: 80%;
+	height: calc(100% - var(--banner-height));
+	font-family: liquor-store, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 6em;
+	color: white;
+}
+
+.hero-container > img {
+	height: 6em;
+}
+
+/*features----------------------------------------------*/
+
+section {
+	padding-block: 2vh;
+}
+
+section:nth-child(2n) {
+	color: white;
+	background: url(/assets/wood.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+section > div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	column-gap: 10%;
+	height: 40vh;
+	width: 80%;
+	margin-inline: auto;
+}
+
+section > div > div {
+	width: 50%;
+}
+
+section > div > img {
+	height: 120%;
+	z-index: 2;
+}
+
+section > div > div > h2 {
+	font-family: liquor-store, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 3em;
+	margin-bottom: .5em;
+}
+
+section > div > div > p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5em;
+	line-height: 1.5em;
+}
+
+section:nth-child(2n) > div > img {
+	order: 1;
+}
+
+
+/*The Below-----------------------------------------------*/
+
+footer {
+	height: 20vh;
+	width: 100%;
+	padding-top: 40px;
+	font-family: liquor-store, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 4em;
+	background: url(/assets/smallrainbowbar.png);
+	background-position: top;
+	background-repeat: repeat-x;
+}
+
+footer > img {
+	width: 100%;
+}
+
+footer > div {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100%;
+	width: 80%;
+	margin-inline: auto;
+}
+
+#download {
+	width: 274px;
+}
+
+@media screen and (max-width: 768px) {
+
+}
