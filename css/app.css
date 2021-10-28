@@ -33,7 +33,7 @@ header {
 
 .hero-container {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 	column-gap: 10vw;
 	margin-inline: auto;
@@ -42,12 +42,12 @@ header {
 	font-family: liquor-store, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 6em;
+	font-size: clamp(1em, 4vw, 4em);
 	color: white;
 }
 
 .hero-container > img {
-	height: 6em;
+	width: 50%;
 }
 
 /*features----------------------------------------------*/
@@ -68,7 +68,7 @@ section > div {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	column-gap: 10%;
+	column-gap: 5%;
 	height: 40vh;
 	width: 80%;
 	margin-inline: auto;
@@ -88,12 +88,11 @@ section > div > div > h2 {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 3em;
-	margin-bottom: .5em;
 }
 
 section > div > div > p {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5em;
+	font-size: clamp(1em, 2vw, 1.5em);
 	line-height: 1.5em;
 }
 
@@ -135,5 +134,8 @@ footer > div {
 }
 
 @media screen and (max-width: 768px) {
+	section > div > img {
+		height: 80%;
+	}
 
 }
