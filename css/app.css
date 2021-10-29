@@ -53,7 +53,6 @@ header {
 /*features----------------------------------------------*/
 
 section {
-	padding-block: 2vh;
 }
 
 section:nth-child(2n) {
@@ -84,13 +83,16 @@ section > div > img {
 }
 
 section > div > div > h2 {
+	margin: 0;
 	font-family: liquor-store, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	font-size: 3em;
+	/* font-size: 3em; */
+	font-size: clamp(1em, 8vw, 3em);
 }
 
 section > div > div > p {
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: clamp(1em, 2vw, 1.5em);
 	line-height: 1.5em;
@@ -116,10 +118,6 @@ footer {
 	background-repeat: repeat-x;
 }
 
-footer > img {
-	width: 100%;
-}
-
 footer > div {
 	display: flex;
 	justify-content: space-around;
@@ -134,8 +132,27 @@ footer > div {
 }
 
 @media screen and (max-width: 768px) {
+	section > div {
+		height: fit-content;
+		padding-block: 2em;
+	}
+
 	section > div > img {
-		height: 80%;
+		height: 70vw;
+	}
+
+	footer {
+		font-size: 5vw;
+	}
+
+	footer > div {
+		justify-content: space-between;
+		column-gap: 1em;
+		width: 90%;
+	}
+
+	footer > div > img {
+		max-width: 50vw;
 	}
 
 }
