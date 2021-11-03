@@ -12,7 +12,7 @@ body {
 	display: flex;
 	align-items: center;
 	height: var(--banner-height);
-	background: url(/assets/header-banner.png);
+	background: url(../assets/header-banner.png);
 	background-size: 100% 100%;
 	background-repeat: repeat-x;
 	background-position: center;
@@ -24,8 +24,8 @@ body {
 }
 
 header {
-	height: 102vh;
-	background: url(/assets/wood.jpg);
+	height: 104vh;
+	background: url(../assets/wood.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -57,7 +57,7 @@ section {
 
 section:nth-child(2n) {
 	color: white;
-	background: url(/assets/wood.jpg);
+	background: url(../assets/wood.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -113,7 +113,7 @@ footer {
 	font-style: normal;
 	font-weight: 400;
 	font-size: 4em;
-	background: url(/assets/smallrainbowbar.png);
+	background: url(../assets/smallrainbowbar.png);
 	background-position: top;
 	background-repeat: repeat-x;
 }
