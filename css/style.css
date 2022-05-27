@@ -1,10 +1,12 @@
+@import url(./normalize.css);
+
 :root {
 	--banner-height: 18vh;
 }
 
 body {
-	margin: auto;
 	height: 100vw;
+	margin: auto;
 	background-color: white;
 }
 
@@ -13,9 +15,9 @@ body {
 	align-items: center;
 	height: var(--banner-height);
 	background: url(../assets/header-banner.png);
+	background-position: center;
 	background-size: 100% 100%;
 	background-repeat: repeat-x;
-	background-position: center;
 }
 
 #banner > img {
@@ -26,28 +28,34 @@ body {
 header {
 	height: 104vh;
 	background: url(../assets/wood.jpg);
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
 }
 
 .hero-container {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	column-gap: 10vw;
-	margin-inline: auto;
+	align-items: center;
+	justify-content: space-around;
 	width: 80%;
 	height: calc(100% - var(--banner-height));
-	font-family: liquor-store, sans-serif;
+	margin-inline: auto;
+	color: white;
 	font-style: normal;
 	font-weight: 400;
 	font-size: clamp(1em, 4vw, 4em);
-	color: white;
+	font-family: liquor-store, sans-serif;
 }
 
 .hero-container > img {
 	width: 50%;
+}
+
+@media (min-width: 1280px) {
+	.hero-container > img {
+		width: 25%;
+	}
 }
 
 /*features----------------------------------------------*/
@@ -56,20 +64,20 @@ section {
 }
 
 section:nth-child(2n) {
-	color: white;
 	background: url(../assets/wood.jpg);
+	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	color: white;
 }
 
 section > div {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
 	column-gap: 5%;
-	height: 40vh;
+	align-items: center;
+	justify-content: space-around;
 	width: 80%;
+	height: 40vh;
 	margin-inline: auto;
 }
 
@@ -78,52 +86,51 @@ section > div > div {
 }
 
 section > div > img {
-	height: 120%;
 	z-index: 2;
+	height: 120%;
 }
 
 section > div > div > h2 {
 	margin: 0;
-	font-family: liquor-store, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	/* font-size: 3em; */
 	font-size: clamp(1em, 8vw, 3em);
+	font-family: liquor-store, sans-serif;
 }
 
 section > div > div > p {
 	margin: 0;
-	font-family: 'Open Sans', sans-serif;
 	font-size: clamp(1em, 2vw, 1.5em);
 	line-height: 1.5em;
+	font-family: 'Open Sans', sans-serif;
 }
 
 section:nth-child(2n) > div > img {
 	order: 1;
 }
 
-
 /*The Below-----------------------------------------------*/
 
 footer {
-	height: 20vh;
 	width: 100%;
+	height: 20vh;
 	padding-top: 40px;
-	font-family: liquor-store, sans-serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 4em;
 	background: url(../assets/smallrainbowbar.png);
 	background-position: top;
 	background-repeat: repeat-x;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 4em;
+	font-family: liquor-store, sans-serif;
 }
 
 footer > div {
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
-	height: 100%;
+	justify-content: space-around;
 	width: 80%;
+	height: 100%;
 	margin-inline: auto;
 }
 
@@ -146,13 +153,12 @@ footer > div {
 	}
 
 	footer > div {
-		justify-content: space-between;
 		column-gap: 1em;
+		justify-content: space-between;
 		width: 90%;
 	}
 
 	footer > div > img {
 		max-width: 50vw;
 	}
-
 }
